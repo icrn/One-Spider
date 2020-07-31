@@ -1,4 +1,4 @@
-package cn.icrn.serv.service;
+package cn.icrn.service;
 
 /**
  * Author: yankang

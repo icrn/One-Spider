@@ -1,6 +1,6 @@
-package cn.icrn.serv.service.impl;
+package cn.icrn.service.impl;
 
-import cn.icrn.serv.service.VideoService;
+import cn.icrn.service.VideoService;
 import cn.icrn.spider.Pipeline;
 import cn.icrn.spider.bean.VideoInfo;
 import lombok.AllArgsConstructor;

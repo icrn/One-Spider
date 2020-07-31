@@ -1,7 +1,7 @@
-package cn.icrn.admin;
+package cn.icrn.controller;
 
-import cn.icrn.serv.model.Message;
-import cn.icrn.serv.service.MessageService;
+import cn.icrn.service.MessageService;
+import cn.icrn.model.data.Message;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

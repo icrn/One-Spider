@@ -1,4 +1,4 @@
-package cn.icrn.serv.model;
+package cn.icrn.model.data;
 
 /**
  * Author: yankang

@@ -1,6 +1,6 @@
-package cn.icrn.serv.service;
+package cn.icrn.service;
 
-import cn.icrn.serv.model.Message;
+import cn.icrn.model.data.Message;
 
 /**
  * Author: yankang

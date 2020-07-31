@@ -1,8 +1,8 @@
-package cn.icrn.serv.service.impl;
+package cn.icrn.service.impl;
 
-import cn.icrn.serv.mapper.MessageMapper;
-import cn.icrn.serv.model.Message;
-import cn.icrn.serv.service.MessageService;
+import cn.icrn.model.mapper.MessageMapper;
+import cn.icrn.model.data.Message;
+import cn.icrn.service.MessageService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
