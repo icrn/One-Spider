@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>icrn.cn</groupId>
+    <groupId>icrn</groupId>
     <artifactId>One-Spider</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -47,19 +47,19 @@
                 <version>1.3.0</version>
             </dependency>
             <dependency>
-                <groupId>enjoy</groupId>
-                <artifactId>microcloud-api</artifactId>
+                <groupId>icrn</groupId>
+                <artifactId>vas-api</artifactId>
                 <version>1.0.0</version>
             </dependency>
             <dependency>
-                <groupId>enjoy</groupId>
-                <artifactId>microcloud-security</artifactId>
+                <groupId>icrn</groupId>
+                <artifactId>vas-security</artifactId>
                 <version>1.0.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
-        <finalName>microcloud</finalName>
+        <finalName>vas-icrn</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
