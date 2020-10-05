@@ -3,7 +3,7 @@ package cn.icrn.service.impl;
 import cn.icrn.model.mapper.MessageMapper;
 import cn.icrn.model.data.Message;
 import cn.icrn.service.MessageService;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Service;
  * Date: 2017/8/17
  */
 @Service
-@AllArgsConstructor
 public class MessageServiceImpl implements MessageService {
 
-    private final MessageMapper messageMapper;
+    @Autowired
+    private MessageMapper messageMapper;
 
     @Override
     public Message selectMessage(Integer id) {

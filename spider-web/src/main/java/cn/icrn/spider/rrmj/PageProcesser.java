@@ -1,4 +1,4 @@
-package cn.icrn.spider;
+package cn.icrn.spider.rrmj;
 
 import cn.icrn.spider.bean.Video;
 import cn.icrn.spider.bean.VideoInfo;

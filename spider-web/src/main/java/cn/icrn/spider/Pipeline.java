@@ -2,7 +2,7 @@ package cn.icrn.spider;
 
 import cn.icrn.spider.bean.VideoInfo;
 import com.alibaba.fastjson.JSONObject;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -14,12 +14,12 @@ import java.util.concurrent.TimeUnit;
  * Date: 2017/9/9
  */
 @Service
-@AllArgsConstructor
-public class Pipeline {
+public class Pipeline<T> {
 
-    private final StringRedisTemplate redisTemplate;
+    @Autowired
+    private StringRedisTemplate redisTemplate;
 
-    public void cacheVideoInfo(Map<String, VideoInfo> map) {
+    public void cacheVideoInfo(Map<String, T> map) {
         if (map != null) {
             for (String title : map.keySet()) {
                 // TODO 性能可优化
@@ -30,15 +30,14 @@ public class Pipeline {
         }
     }
 
-    public VideoInfo getCacheVideoInfo(String key) {
-        VideoInfo info = null;
+    public T getCacheVideoInfo(String key, Class<T> clazz) {
+        T info = null;
         if (key != null) {
             String cache = redisTemplate.opsForValue().get(key);
-            info = JSONObject.parseObject(cache, VideoInfo.class);
+            info = JSONObject.parseObject(cache, clazz);
         }
         return info;
     }
-
 
 
 }

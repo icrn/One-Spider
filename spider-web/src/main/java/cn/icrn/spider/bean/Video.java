@@ -1,14 +1,10 @@
 package cn.icrn.spider.bean;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * Author: yankang
  * Date: 2017/9/16
  */
-@Data
-@NoArgsConstructor
 public class Video {
 
     String episode;
@@ -17,4 +13,27 @@ public class Video {
 
     String videoUrl;
 
+    public String getEpisode() {
+        return episode;
+    }
+
+    public void setEpisode(String episode) {
+        this.episode = episode;
+    }
+
+    public String getPid() {
+        return pid;
+    }
+
+    public void setPid(String pid) {
+        this.pid = pid;
+    }
+
+    public String getVideoUrl() {
+        return videoUrl;
+    }
+
+    public void setVideoUrl(String videoUrl) {
+        this.videoUrl = videoUrl;
+    }
 }
